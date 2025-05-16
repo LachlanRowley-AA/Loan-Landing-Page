@@ -74,7 +74,7 @@ const StatCell = ({
       transition={{ duration: 0.8, ease: 'easeInOut' }}
     >
       <Box {...boxProps}>
-        <AnimatedCounter ta="center" fz={rem(64)} fw="bold" c={{base: "white",md:"#01E194"}} endValue={Math.max(0, endValue)} prefix="$" startValue={Math.max(0, startValue)} decimals={2}  />
+        <AnimatedCounter ta="center" fz={rem(64)} fw="bold" c={{base: "white",md:"#01E194"}} endValue={Math.max(0, endValue)} prefix="$" startValue={Math.max(0, startValue)} />
         <Text fz="lg" inline ta="center" c={{base: "white",md:"white"}}>
           {description}
         </Text>
