@@ -317,7 +317,7 @@ export const Calculator = () => {
               <Grid.Col span={12}>
                 <span>
                   <JumboTitle order={3} fz="xs" ta="center" style={{ textWrap: 'balance' }} c={{base: "white",md:"white"}} fw={600}>
-                    Calculate your
+                    Calculate your estimated
                   </JumboTitle>
                   <JumboTitle order={3} fz="xs" ta="center" style={{ textWrap: 'balance' }} c={{base: "01E194",md:"#01E194"}} fw={600}>
                   weekly repayment
