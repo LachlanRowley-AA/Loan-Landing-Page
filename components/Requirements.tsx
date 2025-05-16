@@ -33,7 +33,7 @@ const Cell = ({ description, ...props }: { description: string; } & HTMLMotionPr
   >
     <Card className={classes.card} h="100%" withBorder>
       <Box mt="xs">
-        <Text fw={600} c='var(--mantine-color-white)'>{description}</Text>
+        <Text fw={600} fz={30} c='var(--mantine-color-white)'>{description}</Text>
       </Box>
     </Card>
   </motion.div>
