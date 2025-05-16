@@ -265,7 +265,7 @@ const LineChart = ({ loanAmount }: { loanAmount: number }) => {
             height: '100%'
           }}
         >
-        <Container style={{ width: '100%', height: '100%', maxHeight: '50vh' }} p={0} visibleFrom='md'>
+        <Container style={{ width: '100%', height: '100%', maxHeight: '500px' }} p={0} visibleFrom='md'>
           <Bar data={data} plugins={[ChartDataLabels]} options={options} />
         </Container>
         </motion.div>
