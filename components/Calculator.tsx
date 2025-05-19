@@ -298,7 +298,7 @@ export const Calculator = () => {
       style={ { marginTop: '30px', paddingTop: '20px' }}
       bg="black"
     >
-      <Grid.Col span={{ base: 12, md: 6}} bg="black">
+      <Grid.Col span={{ base: 12, md: 12}} bg="black">
         <Stack align="center" gap="xs" my="md">
           <motion.div
             initial={{ opacity: 0.0, y: 40 }}
