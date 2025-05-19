@@ -366,55 +366,6 @@ export const Calculator = () => {
             <StatCell startValue={baseValue} endValue={weeklyRepayment} title="Weekly Repayment" description="Weekly repayment" />
           </Grid.Col>
         </Grid>
-        <Box>
-          <motion.div
-            initial={{ opacity: 0.0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeInOut' }}
-          >  
-            <JumboTitle ta="center" fz="xs" order={1}  fw="bold" c="#01E194" mt="xl" mb="xl" pt="xl">
-              Payout Options
-            </JumboTitle>
-            <JumboTitle ta="center" fz="xxs" order={3}  fw="bold" c="#01E194" mt="xl" mb="xl" textWrap='balance'>
-              Save money with no penalties for early payout 
-            </JumboTitle>
-          </motion.div>
-          <Grid gutter="calc(var(--mantine-spacing-lg) * 1)" align="center" mx="xl">
-            <Grid.Col span={{ base: 12, md: 4 }}> {/* 3 month payout */}
-              <PayoutCell
-                startValue={baseValue}
-                endValue={calculateInterestCost(baseValue, 13)} // ~13 weeks in 3 months
-                payoutStartValue={baseValue}
-                payoutEndValue={calculateRemainingPrincipal(baseValue, 13)}
-                title="3 Month Balance"
-                description="after 3 months if paid out in full"
-                payout='Principal Remaining'
-              />
-            </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 4 }}> {/* 6 month payout */}
-              <PayoutCell
-                startValue={baseValue}
-                endValue={calculateInterestCost(baseValue, 26)}
-                payoutStartValue={baseValue}
-                payoutEndValue={calculateRemainingPrincipal(baseValue, 26)}
-                title="6 Month Balance"
-                description="after 6 months if paid out in full"
-                payout='Principal Remaining'
-              />
-            </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 4 }}> {/* 12 month payout */}
-              <PayoutCell
-                startValue={baseValue}
-               endValue={calculateInterestCost(baseValue, 52)}
-               payoutStartValue={baseValue}
-               payoutEndValue={calculateRemainingPrincipal(baseValue, 52)}
-               title="12 Month Balance"
-               description="after 12 months if paid out in full"
-               payout='Principal Remaining'
-              />
-            </Grid.Col>
-          </Grid>
-        </Box>
       </Container>
       </Grid.Col>
     </Grid>
