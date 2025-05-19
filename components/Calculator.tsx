@@ -5,8 +5,8 @@ import { JumboTitle } from './JumboTitle';
 import { Badge, Box, BoxProps, Container, Grid, Stack, Text, rem, TextInput, Slider, Group, useMantineTheme } from '@mantine/core';
 import { color, motion } from 'motion/react';
 import { useState } from 'react';
-import hand from '../../assets/hand.svg';
-import icon from '../../assets/stair.svg'
+// import hand from '../../assets/hand.svg';
+// import icon from '../../assets/stair.svg'
 import NextImage  from 'next/image';
 import dynamic from 'next/dynamic';
 import 'chart.js/auto';
@@ -416,9 +416,6 @@ export const Calculator = () => {
           </Grid>
         </Box>
       </Container>
-      </Grid.Col>
-      <Grid.Col span={{ base: 12, md: 6 }} visibleFrom='md'>
-        <LineChart loanAmount={baseValue}/>
       </Grid.Col>
     </Grid>
   );
