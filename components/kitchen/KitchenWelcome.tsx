@@ -20,36 +20,34 @@ export function KitchenWelcome() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <Flex justify="center" align="center" pt="md">
-          <div
+        <Flex
+          justify="center"
+          align="center"
+          pt="md"
+          wrap="wrap" // This enables wrapping on smaller screens
+          gap="md"    // Optional: adds space between images
+        >
+          <NextImage
+            src={image}
+            alt="Logo"
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              transform: isDesktop ? 'translateX(-5em)' : 'none',
+              maxWidth: '80vw',
+              height: 'auto',
+              marginRight: '2em',
+              flexShrink: 0,
             }}
-          >
-            <NextImage
-              src={image}
-              alt="Logo"
-              style={{
-                height: '100%',
-                width: 'auto',
-                maxWidth: '40vw',
-                marginRight: '2em',
-              }}
-            />
-            <NextImage
-              src="/Hospo3.png"
-              alt="Hospo Dojo logo"
-              height={100}
-              width={100}
-              style={{
-                height: '100%',
-                width: 'auto',
-                maxWidth: '40vw',
-              }}
-            />
-          </div>
+          />
+          <NextImage
+            src="/Hospo3.png"
+            alt="Hospo Dojo logo"
+            height={100}
+            width={100}
+            style={{
+              maxWidth: '40vw',
+              height: 'auto',
+              flexShrink: 0,
+            }}
+          />
         </Flex>
         <JumboTitle
           c="#01E194"
