@@ -12,7 +12,7 @@ export function KitchenWelcome() {
   return (
     <>
       <motion.div initial={{ opacity: 0.0, y: 0 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-      <Grid justify="center" align="center" direction="row" wrap="nowrap" pt="md">
+      <Grid justify="center" align="center" pt="md">
         <Grid.Col span={6} style={{ display: 'flex', justifyContent: 'right', alignItems: 'center' }} pr="xl">
           <NextImage
             src={image}
