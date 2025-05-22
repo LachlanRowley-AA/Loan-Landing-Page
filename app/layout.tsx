@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: any }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "Asset Alley",
+              "name": "Asset Alley Website Finance",
               "url": "https://www.assetalley.vercel.app",
             }),
           }}
