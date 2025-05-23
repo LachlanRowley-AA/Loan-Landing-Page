@@ -36,8 +36,8 @@ const FAQ: Faq[] = [
     value: 'security',
     question: 'No Additional Security Needed',
     answer:
-    <>  'No additional security required (personal property or
-assets within the business)'</>
+    <>  No additional security required (personal property or
+assets within the business)</>
   },
   {
     value: 'cost',
