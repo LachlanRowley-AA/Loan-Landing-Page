@@ -1,6 +1,6 @@
 'use client';
 
-import { Text, Title, Image, Flex, Grid } from '@mantine/core';
+import { Text, Title, Image, Flex, Grid, Divider} from '@mantine/core';
 import classes from './Welcome.module.css';
 import image from '../../public/AA_Dark_Logo.svg';
 import NextImage from 'next/image';
@@ -24,19 +24,9 @@ export function KitchenWelcome() {
           justify="center"
           align="center"
           pt="md"
-          wrap="wrap" // This enables wrapping on smaller screens
-          gap="md"    // Optional: adds space between images
+          wrap="wrap"
+          gap="md"   
         >
-          <NextImage
-            src={image}
-            alt="Logo"
-            style={{
-              maxWidth: '80vw',
-              height: 'auto',
-              marginRight: '2em',
-              flexShrink: 0,
-            }}
-          />
           <NextImage
             src="/Hospo3.png"
             alt="Hospo Dojo logo"
@@ -45,6 +35,26 @@ export function KitchenWelcome() {
             style={{
               maxWidth: '40vw',
               height: 'auto',
+              flexShrink: 0,
+            }}
+          />
+          <Divider
+            visibleFrom='md'
+            orientation='vertical'
+            style={{
+              width: '2px',
+              height: 'auto',
+              backgroundColor: '#ccc',
+              margin: '0 1em',
+            }}
+          />
+          <NextImage
+            src={image}
+            alt="Logo"
+            style={{
+              maxWidth: '80vw',
+              height: 'auto',
+              marginRight: '1em',
               flexShrink: 0,
             }}
           />
