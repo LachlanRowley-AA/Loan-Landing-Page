@@ -15,7 +15,6 @@ export default function Shopfit() {
           <KitchenWelcome />
           <Calculator />
           <KitchenFaq />
-          <Hero02 />
           <AuthenticationForm />
         </MantineProvider>
       </Container>

@@ -15,7 +15,6 @@ export default function Shopfit() {
       <ITWelcome />
       <Calculator />
       <ITFaq />
-      <Hero02 />
       <AuthenticationForm />
       </MantineProvider>
       <Footer01 />
