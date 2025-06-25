@@ -1,12 +1,12 @@
 'use client';
 
-import { JumboTitle } from './JumboTitle'
+import { JumboTitle } from '../JumboTitle'
 //import { InlineCodeHighlight } from '@mantine/code-highlight';
 import { Anchor, BackgroundImage, Box, Container, Flex, Stack, Text, Image } from '@mantine/core';
 import { ReactNode } from 'react';
 import { useMediaQuery } from '@mantine/hooks';
 import NextImage from 'next/image'
-import image from "../assets/Asset Alley Brandmark_ColourScreenUse.svg"
+import image from "../../assets/Asset Alley Brandmark_ColourScreenUse.svg"
 
 type Faq = {
   value: string;
@@ -27,21 +27,6 @@ const FAQ: Faq[] = [
     answer: 'Repayments are calculated over 5 years'
   },
   {
-    value: 'extra-repayment',
-    question: 'Optional Extra Repayments',
-    answer:
-      'Make extra repayments towards facility to lower monthly repayments',
-  },
-  {
-    value: 'penalty',
-    question: "Repay Anytime Without Penalty",
-    answer:
-    <>
-      Repay anytime without penalties and reuse the
-facility for business costs that traditional lenders won’t
-finance (materials, inventory, software, fit-out, etc.)</>
-  },
-  {
     value: 'charge',
     question: 'Only Charge on Use',
     answer:
@@ -51,7 +36,7 @@ finance (materials, inventory, software, fit-out, etc.)</>
     value: 'security',
     question: 'No Additional Security Needed',
     answer:
-    <> No additional security required (personal property or
+    <>  No additional security required (personal property or
 assets within the business)</>
   },
   {
@@ -59,12 +44,6 @@ assets within the business)</>
     question: 'Cost',
     answer:
       'Only pay 1.1 - 1.5% interest per month',
-  },
-  {
-    value: 'defer',
-    question: 'Defer Payments',
-    answer:
-      'Defer payments for 120 days, with no payments required in the first four months',
   },
   {
     value: 'setup',
@@ -102,7 +81,7 @@ const FaqCell = ({ question, answer }: Faq) => (
   </Box>
 );
 
-export const ShopFaq01 = () => {
+export const BrandFaq = () => {
   const isDesktop = useMediaQuery('(min-width: 1024px)');
 
   return (
@@ -124,12 +103,12 @@ export const ShopFaq01 = () => {
         lg: 'calc(var(--mantine-spacing-lg))',
       }}
       fluid
-      style={{ backgroundColor: 'rgba(0, 0, 0, 0.8)', borderRadius: '8px' }} // Optional: Adds contrast for readability
+      style={{ backgroundColor: 'rgba(0, 0, 0, 0.8)', borderRadius: '8px' }}
     >
       <Container size="md" style={{zIndex:1}}>
         <Stack gap="xs" align="center">
           <JumboTitle order={2} fz="sm" ta="center" style={{ textWrap: 'balance' }} mb="sm" c="#01E194">
-            Why Get a Loan For Your Fitout?
+            Why Get a Loan For Your Branding?
           </JumboTitle>
         </Stack>
       </Container>
