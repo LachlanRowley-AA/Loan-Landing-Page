@@ -14,7 +14,7 @@ import ChartDataLabels, { Context } from 'chartjs-plugin-datalabels';
 import { useMediaQuery } from '@mantine/hooks';
 
 
-const INTEREST_RATE = 15.95 / 100; // 15.95% annual interest
+const INTEREST_RATE = 16.95 / 100; // 15.95% annual interest
 const DAYS_IN_YEAR = 365;
 const WEEKS_IN_YEAR = 52;
 const DAYS_IN_WEEK = 7;
